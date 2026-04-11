@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply inline-block rounded-full bg-primary-600 px-6 py-3 text-white font-semibold shadow-lg shadow-primary-500/30 transition-all hover:bg-primary-700 hover:shadow-xl;
+    }
+    
+    .card {
+        @apply rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900;
+    }
+    
+    .course-card {
+        @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+    }
+}
+
+html {
+    overflow-y: scroll;
+}
